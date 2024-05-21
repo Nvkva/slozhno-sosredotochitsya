@@ -2,3 +2,23 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --accent-color: #FF0070;
+  --main-background-color: #000028;
+  --main-text-color: #F1B2CE;
+  --nav-color: #FF0070;
+  --main-heading-color: #000028;
+  --section-heading-color: #FF0070;
+  --header-logo-color: #DB00FF;
+  --footer-logo-color: #DB00FF;
+  --main-gap: 10px;
+
+}
+
+@media (width >=768px) {
+  :root {
+    --main-gap: 20px;
+    --header-logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --footer-logo-size: clamp (7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+}
