@@ -24,9 +24,6 @@
   align-items: center;
   block-size: 100vh;
   min-block-size: 668px;
-  padding: var(--main-gap);
-  font-size: var(--main-text-size);
-  padding-inline: 10px;
 }
 
 .decorated-zone::before {
@@ -36,7 +33,6 @@
   block-size: 25px;
   border-inline-end: 1px solid var(--nav-color);
   border-block-start: 1px solid var(--nav-color);
-  inset-inline-end: var(--main-gap);
   inset-block-start: var(--main-gap);
 }
 
@@ -47,7 +43,7 @@
   block-size: 25px;
   border-inline-start: 1px solid var(--nav-color);
   border-block-end: 1px solid var(--nav-color);
-  inset-inline-start: var(--main-gap);
+  inset-inline-start: 0;
   inset-block-end: var(--main-gap);
 }
 
@@ -56,7 +52,7 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-
+  padding-inline: 10px;
 }
 
 .header__theme-menu {
@@ -65,19 +61,33 @@
   justify-content: end;
 }
 
+.header__theme-menu-item {
+  width: 70px;
+  text-align: center;
+}
+
+.header__theme-menu-item:hover {
+  border: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-item:focus-visible {
+  border: 1px solid var(--accent-color);
+}
+
 .header__theme-menu-button {
-  font-family: IBM Plex Mono, sans-serif;
-  font-weight: 400;
-  font-size: 18px;
+  font-family: var(--main-font-family);
+  font-weight: var(--normal-font-weight);
+  font-size: var(--main-text-size);
   line-height: 18px;
   color: var(--nav-color);
   background: none;
   border: none;
+  text-transform: lowercase;
 }
 
 .header__main-title {
-  font-family: IBM Plex Mono, sans-serif;
-  font-weight: 700;
+  font-family: var(--main-font-family);
+  font-weight: var(--bold-font-weight);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 95.7px;
   color: var(--header-logo-color);
@@ -85,10 +95,11 @@
 }
 
 .header__text {
-  font-family: IBM Plex Mono, sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 23.4px;
+  font-family: var(--main-font-family);
+  font-weight: var(--bold-font-weight);
+  ;
+  font-size: var(--main-text-size);
+  line-height: var(--main-line-height);
 }
 
 .title-decor {
@@ -101,9 +112,10 @@
   top: 10px;
   right: 38px;
   content: 'rec';
-  font-family: IBM Plex Mono, sans-serif;
-  font-weight: 400;
-  font-size: 18px;
+  font-family: var(--main-font-family);
+  font-weight: var(--normal-font-weight);
+  ;
+  font-size: var(--main-text-size);
   line-height: 25px;
   text-transform: uppercase;
   color: var(--accent-color);
@@ -128,5 +140,92 @@
 img {
   overflow-clip-margin: content-box 5px;
   overflow: clip;
+}
 
+.causes {
+  display: grid;
+}
+
+.section-heading {
+  font-family: var(--main-font-family);
+  font-weight: var(--bold-font-weight);
+  ;
+  font-size: var(--main-text-size);
+  line-height: var(--main-line-height);
+  color: var(--section-heading-color);
+}
+
+.section-indentation {
+  margin-bottom: 50px;
+}
+
+.text-heading {
+  font-family: var(--main-font-family);
+  font-weight: var(--bold-font-weight);
+  ;
+  font-size: var(--main-text-size);
+  line-height: var(--main-line-height);
+  margin: 20px 0px;
+}
+
+.text-subheading {
+  font-family: var(--main-font-family);
+  font-weight: var(--normal-font-weight);
+  ;
+  font-size: var(--main-text-size);
+  line-height: var(--main-line-height);
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.text-subheading:first-child {
+  margin-top: none;
+}
+
+.content-text {
+  var(--main-font-family);
+  font-weight: var(--normal-font-weight);
+  ;
+  font-size: var(--main-text-size);
+  line-height: var(--main-line-height);
+  color: var(--main-text-color);
+}
+
+.shadow {
+  text-shadow: 2px 1px 0 var(--accent-color);
+  text-decoration: none;
+}
+
+.shadow:hover {
+  text-decoration: underline;
+}
+
+.shadow:focus {
+  text-decoration: underline;
+}
+
+.factors {
+  display: grid;
+}
+
+.advices {
+  display: grid;
+}
+
+.footer {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+  height: 100dvh;
+
+}
+
+.footer__main-title {
+  font-family: var(--main-font-family);
+  font-weight: var(--bold-font-weight);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 95.7px;
+  color: var(--header-logo-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
 }

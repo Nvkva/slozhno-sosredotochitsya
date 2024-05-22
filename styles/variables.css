@@ -12,7 +12,12 @@
   --header-logo-color: #DB00FF;
   --footer-logo-color: #DB00FF;
   --main-gap: 10px;
-
+  --main-text-size: 18px;
+  --main-font-family: IBM Plex Mono, sans-serif;
+  --main-line-height: 23.4px;
+  --bold-font-weight: 700;
+  --normal-font-weight: 400;
+`
 }
 
 @media (width >=768px) {
