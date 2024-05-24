@@ -3,10 +3,35 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+/* :root .theme_light {
+  --accent-color: #FF8DCB;
+  --main-background-color: #FFF1F7;
+  --main-text-color: #353430;
+  --nav-color: #353430;
+  --main-heading-color: #353430;
+  --section-heading-color: #FF8DCB;
+  --header-logo-color: #FFC2E6;
+  --footer-logo-color: #FFC2E6;
+} */
+
+/* @media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: #FFC2E6;
+    --main-background-color: #FFFF;
+    --main-text-color: #F1B2CE;
+    --nav-color: #FF0070;
+    --main-heading-color: #000028;
+    --section-heading-color: #FF0070;
+    --header-logo-color: #DB00FF;
+    --footer-logo-color: #DB00FF;
+    }
+} */
 
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  background-image: url(../images/cover-image-light.png);
+
 }

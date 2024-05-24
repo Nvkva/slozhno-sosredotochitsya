@@ -31,8 +31,10 @@
     --header-logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     --footer-logo-size: clamp (7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     --icon-after-gap-start: 28px;
+    --icon-before-gap: 48px;
     --width-heading-text: 50%;
     --page-spacing: 20px;
     --section-spacing: 80px;
+    --icon-after-gap-end: 29px;
   }
 }

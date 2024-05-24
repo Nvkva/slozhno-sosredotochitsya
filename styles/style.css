@@ -32,7 +32,7 @@
     margin-top: 0;
   }
   
-  .header__title {
+  .header__main-title {
     margin-left: -20px;
   }
 
@@ -79,9 +79,6 @@
     width: 236px;
   }
 
-  .text-block {
-    width: 472px;
-  }
   .factors .text-block {
     width: 100%;
   }
@@ -101,6 +98,20 @@
     grid-auto-flow: column;
     margin-block-start: 20px;
   }
+
+  .text-block {
+    width: 649px;
+  }
+
+  .factors .texts-block {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+  }
+
+    .factors .texts-block .text-block:last-child {
+    margin-top: 0px;
+  }
 }
 
 
@@ -114,6 +125,7 @@
   min-block-size: 668px;
   margin-bottom: 40px;
   background-image: url(../images/cover-image-dark.png);
+  z-index:1;
 }
 
 .decorated-zone::before {
