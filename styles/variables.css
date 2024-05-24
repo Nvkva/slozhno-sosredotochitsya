@@ -17,7 +17,12 @@
   --main-line-height: 23.4px;
   --bold-font-weight: 700;
   --normal-font-weight: 400;
-`
+  --icon-before-gap: 48px;
+  --icon-after-gap-end: 28px;
+  --icon-after-gap-start: 19px;
+  --width-heading-text: 100dvw;
+  --page-spacing: 10px;
+  --section-spacing: 50px;
 }
 
 @media (width >=768px) {
@@ -25,5 +30,9 @@
     --main-gap: 20px;
     --header-logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     --footer-logo-size: clamp (7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --icon-after-gap-start: 28px;
+    --width-heading-text: 50dvw;
+    --page-spacing: 20px;
+    --section-spacing: 80px;
   }
 }

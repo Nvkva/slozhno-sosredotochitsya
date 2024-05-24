@@ -4,6 +4,54 @@
   переключая тему
 */
 
+:root .theme_dark {
+  --accent-color: #FF0070;
+  --main-background-color: #000028;
+  --main-text-color: #F1B2CE;
+  --nav-color: #FF0070;
+  --main-heading-color: #000028;
+  --section-heading-color: #FF0070;
+  --header-logo-color: #DB00FF;
+  --footer-logo-color: #DB00FF;
+  --main-gap: 10px;
+  --main-text-size: 18px;
+  --main-font-family: IBM Plex Mono, sans-serif;
+  --main-line-height: 23.4px;
+  --bold-font-weight: 700;
+  --normal-font-weight: 400;
+  --icon-before-gap: 48px;
+  --icon-after-gap-end: 28px;
+  --icon-after-gap-start: 19px;
+  --width-heading-text: 100dvw;
+  --page-spacing: 10px;
+  --section-spacing: 50px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent-color: #FF0070;
+    --main-background-color: #000028;
+    --main-text-color: #F1B2CE;
+    --nav-color: #FF0070;
+    --main-heading-color: #000028;
+    --section-heading-color: #FF0070;
+    --header-logo-color: #DB00FF;
+    --footer-logo-color: #DB00FF;
+    --main-gap: 10px;
+    --main-text-size: 18px;
+    --main-font-family: IBM Plex Mono, sans-serif;
+    --main-line-height: 23.4px;
+    --bold-font-weight: 700;
+    --normal-font-weight: 400;
+    --icon-before-gap: 48px;
+    --icon-after-gap-end: 28px;
+    --icon-after-gap-start: 19px;
+    --width-heading-text: 100dvw;
+    --page-spacing: 10px;
+    --section-spacing: 50px;
+  }
+}
+
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
