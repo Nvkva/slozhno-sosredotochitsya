@@ -7,7 +7,7 @@
   --main-background-color: #000028;
   --main-text-color: #F1B2CE;
   --nav-color: #FF0070;
-  --nav-color-with-opacity: rgba(255, 0, 112, 0.4); 
+  --nav-color-with-opacity: rgba(255, 0, 112, 0.4);
   --main-heading-color: #000028;
   --section-heading-color: #FF0070;
   --header-logo-color: #DB00FF;
@@ -24,6 +24,9 @@
   --width-heading-text: 100%;
   --page-spacing: 10px;
   --section-spacing: 50px;
+  --header-spacing: 40px;
+  --footer-spacing: 40px;
+  --size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
 
 @media (width >=768px) {
@@ -36,6 +39,9 @@
     --width-heading-text: 50%;
     --page-spacing: 20px;
     --section-spacing: 80px;
-    --icon-after-gap-end: 29px;  
+    --header-spacing: 60px;
+    --icon-after-gap-end: 29px;
+    --footer-spacing: 60px;
+    --size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }

@@ -1,9 +1,3 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
-.page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-}
-
 @supports (block-size: 100dvb) {
   .header {
     block-size: 100dvb;
@@ -17,12 +11,12 @@
 
   .causes {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: min-content 1fr;
   }
 
   .advices {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: min-content 1fr;
   }
 
   .texts-block .text-block:first-child {
@@ -73,9 +67,18 @@
     width: 236px;
   }
 
+  .section-indentation .texts-block {
+    width: 472px;
+  }
+
   .factors .text-block {
     width: 100%;
   }
+
+  .factors .texts-block {
+    width: 100%;
+  }
+
 }
 
 @media (width >=1024px) {
@@ -105,6 +108,10 @@
 
   .factors .texts-block .text-block:last-child {
     margin-top: 0px;
+  }
+
+  .factors .text-block {
+    width: 100%;
   }
 }
 
@@ -150,7 +157,7 @@
   align-items: center;
   block-size: 100vh;
   min-block-size: 668px;
-  margin-bottom: 40px;
+  margin-bottom: var(--header-spacing);
   background-image: url(../images/cover-image-dark.png);
   background-position: bottom;
   background-size: cover;
@@ -228,7 +235,7 @@
   justify-self: flex-start;
   font-family: var(--main-font-family);
   font-weight: var(--bold-font-weight);
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-size: var(--size);
   line-height: 95.7px;
   color: var(--header-logo-color);
   text-shadow: 4px 4px 0 var(--accent-color);
@@ -351,12 +358,13 @@ img {
   justify-items: center;
   position: relative;
   height: 100dvh;
+  margin-top: var(--footer-spacing);
 }
 
 .footer__main-title {
   font-family: var(--main-font-family);
   font-weight: var(--bold-font-weight);
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-size: var(--size);
   line-height: 95.7px;
   color: var(--footer-logo-color);
   text-shadow: 2px 2px 0 var(--accent-color);
