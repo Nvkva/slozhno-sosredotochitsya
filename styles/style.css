@@ -31,7 +31,7 @@
     margin-bottom: 20px;
     margin-top: 0;
   }
-  
+
   .header__main-title {
     margin-left: -20px;
   }
@@ -48,23 +48,23 @@
       "c e e";
     align-items: start;
   }
-  
+
   .image-sunset {
     grid-area: a;
   }
-  
+
   .image-ice-cream {
     grid-area: b;
   }
-  
+
   .image-tape {
     grid-area: c;
   }
-  
+
   .image-books {
     grid-area: d;
   }
-  
+
   .image-street {
     grid-area: e;
   }
@@ -109,7 +109,7 @@
     gap: 20px;
   }
 
-    .factors .texts-block .text-block:last-child {
+  .factors .texts-block .text-block:last-child {
     margin-top: 0px;
   }
 }
@@ -125,7 +125,8 @@
   min-block-size: 668px;
   margin-bottom: 40px;
   background-image: url(../images/cover-image-dark.png);
-  z-index:1;
+  background-position: bottom;
+  z-index: 1;
 }
 
 .decorated-zone::before {
@@ -151,7 +152,7 @@
 }
 
 .page {
-  background-color: var(--main-heading-color);
+  background-color: var(--main-background-color);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
