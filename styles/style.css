@@ -209,8 +209,8 @@
   height: 26px;
 }
 
-.header__theme-menu-button:hover {
-  border: 1px solid var(--nav-color);
+.header__theme-menu-button:hover:not(.header__theme-menu-button_active) {
+  border: 1px solid var(--nav-color-with-opacity);
 }
 
 .header__theme-menu-button:focus-visible {
@@ -221,6 +221,7 @@
 
 .header__theme-menu-button_active {
   pointer-events: none;
+  border: 1px solid var(--nav-color);
 }
 
 .header__main-title {
