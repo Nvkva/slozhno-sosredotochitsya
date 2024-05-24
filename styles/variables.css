@@ -17,9 +17,9 @@
   --main-line-height: 23.4px;
   --bold-font-weight: 700;
   --normal-font-weight: 400;
-  --icon-before-gap: 38px;
-  --icon-after-gap-end: 19px;
-  --icon-after-gap-start: 18px;
+  --icon-before-gap: 48px;
+  --icon-after-gap-end: 28px;
+  --icon-after-gap-start: 19px;
   --width-heading-text: 100%;
   --page-spacing: 10px;
   --section-spacing: 50px;
@@ -35,6 +35,6 @@
     --width-heading-text: 50%;
     --page-spacing: 20px;
     --section-spacing: 80px;
-    --icon-after-gap-end: 29px;
+    --icon-after-gap-end: 29px;  
   }
 }

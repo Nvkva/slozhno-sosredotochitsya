@@ -52,7 +52,7 @@
   }
 
   .page {
-    background-color: var(--main-heading-color);
+    background-color: var(--main-background-color);
   }
 
   .header__icon::before {
@@ -104,7 +104,7 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  background-color: var(--main-heading-color);
+  background-color: var(--main-background-color);
 
   .header {
     background-image: url(../images/cover-image-dark.png);
