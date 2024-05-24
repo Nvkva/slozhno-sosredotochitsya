@@ -123,7 +123,7 @@
   block-size: 25px;
   border-inline-end: 1px solid var(--nav-color);
   border-block-start: 1px solid var(--nav-color);
-  inset-inline-end: 0;
+  inset-inline-end: var(--main-gap);
   inset-block-start: var(--main-gap);
 }
 
@@ -134,7 +134,7 @@
   block-size: 25px;
   border-inline-start: 1px solid var(--nav-color);
   border-block-end: 1px solid var(--nav-color);
-  inset-inline-start: 0;
+  inset-inline-start: var(--main-gap);
   inset-block-end: var(--main-gap);
 }
 
@@ -143,6 +143,9 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.page-spacing {
   padding-inline: var(--page-spacing);
 }
 
@@ -221,6 +224,7 @@
   line-height: 25px;
   text-transform: uppercase;
   color: var(--accent-color);
+  z-index: 2;
 }
 
 .header__icon::after {
@@ -233,6 +237,7 @@
   box-shadow: 0px 0px 4px 2px rgba(255, 0, 112, 1);
   height: 9px;
   width: 9px;
+  z-index: 2;
 }
 
 .image {
