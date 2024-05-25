@@ -116,14 +116,16 @@
 
 .page {
   background-color: var(--main-background-color);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
   font-family: var(--main-font-family);
   font-weight: var(--normal-font-weight);
   font-size: var(--main-text-size);
   line-height: var(--main-line-height);
   color: var(--main-text-color);
+  background-image: var(--background-image);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .header__icon::before {
@@ -164,10 +166,6 @@
   block-size: 100vh;
   min-block-size: 668px;
   margin-block-end: var(--header-spacing);
-  background-image: var(--main-background-image);
-  background-position: bottom;
-  background-size: cover;
-  z-index: 1;
 }
 
 .decorated-zone::before {
