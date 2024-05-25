@@ -245,7 +245,7 @@
 
 .texts-block {
   display: grid;
-  gap: var(--main-gap); 
+  gap: var(--main-gap);
 }
 
 .text-block {
