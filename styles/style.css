@@ -128,10 +128,16 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  font-family: var(--main-font-family);
+  font-weight: var(--normal-font-weight);
+  font-size: var(--main-text-size);
+  line-height: var(--main-line-height);
+  color: var(--main-text-color);
 }
 
 .header__icon::before {
   position: absolute;
+  display: var(--icon-visibility);
   inset-inline-end: var(--icon-before-gap);
   inset-block-start: var(--main-gap);
   content: 'rec';
@@ -146,6 +152,7 @@
 
 .header__icon::after {
   position: absolute;
+  display: var(--icon-visibility);
   inset-inline-end: var(--icon-after-gap-end);
   inset-block-start: var(--icon-after-gap-start);
   background: var(--accent-color);
@@ -165,8 +172,8 @@
   align-items: center;
   block-size: 100vh;
   min-block-size: 668px;
-  margin-bottom: var(--header-spacing);
-  background-image: url(../images/cover-image-dark.png);
+  margin-block-end: var(--header-spacing);
+  background-image: var(--main-background-image);
   background-position: bottom;
   background-size: cover;
   z-index: 1;
