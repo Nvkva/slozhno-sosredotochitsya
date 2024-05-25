@@ -13,6 +13,7 @@
   --main-background-color: #FFF1F7;
   --main-text-color: #353430;
   --nav-color: #353430;
+  --nav-color-with-opacity: rgb(53, 52, 48, 0.4);
   --main-heading-color: #353430;
   --section-heading-color: #353430;
   --header-logo-color: #FFC2E6;
@@ -27,8 +28,9 @@
     --main-background-color: #FFF1F7;
     --main-text-color: #353430;
     --nav-color: #353430;
+    --nav-color-with-opacity: rgb(53, 52, 48, 0.4);
     --main-heading-color: #353430;
-    --section-heading-color: #FF8DCB;
+    --section-heading-color: #353430;
     --header-logo-color: #FFC2E6;
     --footer-logo-color: #FFC2E6;
     --icon-visibility: none;

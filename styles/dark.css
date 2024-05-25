@@ -12,6 +12,7 @@
   --main-background-color: #000028;
   --main-text-color: #F1B2CE;
   --nav-color: #FF0070;
+  --nav-color-with-opacity: rgba(255, 0, 112, 0.4);
   --main-heading-color: #000028;
   --section-heading-color: #FF0070;
   --header-logo-color: #DB00FF;
@@ -26,6 +27,7 @@
     --main-background-color: #000028;
     --main-text-color: #F1B2CE;
     --nav-color: #FF0070;
+    --nav-color-with-opacity: rgba(255, 0, 112, 0.4);
     --main-heading-color: #000028;
     --section-heading-color: #FF0070;
     --header-logo-color: #DB00FF;
