@@ -6,69 +6,61 @@
 
 @media (width >=768px) {
   .header__main-title {
-    margin-left: -20px;
+    margin-inline-start: -20px;
   }
 
-  .causes {
-    display: grid;
-    grid-template-columns: min-content 1fr;
-  }
-
-  .advices {
-    display: grid;
+  .double-section {
     grid-template-columns: min-content 1fr;
   }
 
   .texts-block .text-block:first-child {
-    margin-bottom: 20px;
-    margin-top: 0;
+    margin-block-end: 20px;
+    margin-block-start: 0;
   }
 
   .gallery .text-heading {
-    margin-bottom: var(--main-gap);
+    margin-block-end: var(--main-gap);
   }
 
   .section-image {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-    grid-template-rows: (4, min-content);
     grid-template-areas:
-      "a a b"
-      "c d b"
-      "c e e"
-      "c e e";
+      "sunset sunset ice-cream"
+      "tape books ice-cream"
+      "tape street street"
+      "tape street street";
     align-items: start;
   }
 
   .image-sunset {
-    grid-area: a;
+    grid-area: sunset;
   }
 
   .image-ice-cream {
-    grid-area: b;
+    grid-area: ice-cream;
   }
 
   .image-tape {
-    grid-area: c;
+    grid-area: tape;
   }
 
   .image-books {
-    grid-area: d;
+    grid-area: books;
   }
 
   .image-street {
-    grid-area: e;
+    grid-area: street;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (768px <=width <=1024px) {
   .section-indentation {
     gap: 20px;
   }
 
   .section-heading {
-    width: 236px;
+    max-width: 236px;
   }
 
   .section-indentation .texts-block {
@@ -82,7 +74,6 @@
   .factors .texts-block {
     width: 100%;
   }
-
 }
 
 @media (width >=1024px) {
@@ -97,7 +88,7 @@
   }
 
   .section-heading {
-    width: 315px;
+    max-width: 315px;
   }
 
   .advices .texts-block {
@@ -105,7 +96,7 @@
   }
 
   .text-block {
-    width: 649px;
+    max-width: 649px;
   }
 
   .factors .texts-block {
@@ -115,7 +106,7 @@
   }
 
   .factors .texts-block .text-block:last-child {
-    margin-top: 0px;
+    margin-block-start: 0px;
   }
 
   .factors .text-block {
@@ -262,7 +253,7 @@
   font-weight: var(--bold-font-weight);
   font-size: var(--main-text-size);
   line-height: var(--main-line-height);
-  width: var(--width-heading-text);
+  max-width: var(--width-heading-text);
 }
 
 .title-decor {
@@ -270,13 +261,13 @@
   color: var(--main-heading-color);
 }
 
-.causes {
+.double-section {
   display: grid;
 }
 
 .section-indentation {
   display: grid;
-  margin-bottom: var(--section-spacing);
+  margin-block-end: var(--section-spacing);
 }
 
 .section-heading {
@@ -286,16 +277,16 @@
   font-size: var(--main-text-size);
   line-height: var(--main-line-height);
   color: var(--section-heading-color);
-  margin-bottom: 20px;
+  margin-block-end: 20px;
 }
 
 .texts-block .text-block:last-child {
-  margin-bottom: 0;
-  margin-top: 20px;
+  margin-block-end: 0;
+  margin-block-start: 20px;
 }
 
 .text-block {
-  margin-bottom: 20px;
+  margin-block-end: 20px;
 }
 
 .text-heading {
@@ -303,7 +294,7 @@
   font-weight: var(--bold-font-weight);
   font-size: var(--main-text-size);
   line-height: var(--main-line-height);
-  margin-bottom: 10px;
+  margin-block-end: 10px;
 }
 
 .content-text {
@@ -334,21 +325,17 @@
   gap: 0px;
 }
 
-.advices {
-  display: grid;
-}
-
 .text-subheading {
   font-family: var(--main-font-family);
   font-weight: var(--normal-font-weight);
   font-size: var(--main-text-size);
   line-height: var(--main-line-height);
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-block-start: 20px;
+  margin-block-end: 10px;
 }
 
 .text-subheading:first-child {
-  margin-top: none;
+  margin-block-start: none;
 }
 
 .image {
@@ -373,7 +360,7 @@ img {
   justify-items: center;
   position: relative;
   height: 100dvh;
-  margin-top: var(--footer-spacing);
+  margin-block-start: var(--footer-spacing);
 }
 
 .footer__main-title {
