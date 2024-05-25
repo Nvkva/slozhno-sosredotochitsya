@@ -24,6 +24,10 @@
     margin-top: 0;
   }
 
+  .gallery .text-heading {
+    margin-bottom: var(--main-gap);
+  }
+
   .section-image {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -96,13 +100,17 @@
     width: 315px;
   }
 
+  .advices .texts-block {
+    width: 100%;
+  }
+
   .text-block {
     width: 649px;
   }
 
   .factors .texts-block {
     display: grid;
-    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
   }
 
@@ -344,7 +352,7 @@
 
 .section-image {
   display: grid;
-  gap: 10px;
+  gap: var(--main-gap);
 }
 
 img {
