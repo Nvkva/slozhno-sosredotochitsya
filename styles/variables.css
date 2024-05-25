@@ -12,7 +12,7 @@
   --section-heading-color: #FF0070;
   --header-logo-color: #DB00FF;
   --footer-logo-color: #DB00FF;
-  --main-gap: 10px;
+  --main-gap: 20px;
   --main-text-size: 18px;
   --main-font-family: 'IBM Plex mono', Courier, monospace;
   --main-line-height: 23.4px;
@@ -45,6 +45,13 @@
     --section-spacing: 80px;
     --header-spacing: 60px;
     --footer-spacing: 60px;
+    --section-indentation: 20px;
     --size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  @media (width >=1024px) {
+    :root {
+      --section-indentation: 10px;
+    }
   }
 }
