@@ -13,13 +13,8 @@
     grid-template-columns: 1fr 2fr;
   }
 
-  .gallery .text-heading {
-    margin-block-end: var(--main-gap);
-  }
-
   .section-image {
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
     grid-template-areas:
       "sunset sunset ice-cream"
       "tape books ice-cream"
@@ -50,10 +45,6 @@
 }
 
 @media (768px <=width <=1024px) {
-  .section-indentation {
-    gap: var(--section-indentation);
-  }
-
   .section-heading {
     max-width: 236px;
   }
@@ -63,10 +54,6 @@
   .header__theme-menu {
     justify-self: center;
     align-self: flex-start;
-  }
-
-  .section-indentation {
-    gap: var(--section-indentation);
   }
 
   .header__theme-menu-list {
@@ -82,13 +69,7 @@
   }
 
   .factors .texts-block {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-  }
-
-  .header__text {
-    margin-block-start: 20px;
   }
 }
 
@@ -109,8 +90,8 @@
 .header__icon::before {
   position: absolute;
   display: var(--icon-visibility);
-  inset-inline-end: var(--icon-before-gap);
-  inset-block-start: var(--main-gap);
+  inset-inline-end: var(--icon-before-gap-end);
+  inset-block-start: var(--icon-before-gap-start);
   content: 'rec';
   font-family: var(--main-font-family);
   font-weight: var(--normal-font-weight);
@@ -224,7 +205,7 @@
   font-family: var(--main-font-family);
   font-weight: var(--bold-font-weight);
   font-size: var(--size);
-  line-height: 95.7px;
+  line-height: 0.825;
   color: var(--header-logo-color);
   text-shadow: 4px 4px 0 var(--accent-color);
 }
@@ -261,6 +242,7 @@
 .section-indentation {
   display: grid;
   margin-block-end: var(--section-spacing);
+  gap: var(--section-indentation);
 }
 
 .section-heading {
@@ -302,8 +284,7 @@
 }
 
 .research-link:focus-visible {
-  border: 1px solid var(--main-text-color);
-  outline: none;
+  outline: 1px solid var(--main-text-color);
 }
 
 .factors {
